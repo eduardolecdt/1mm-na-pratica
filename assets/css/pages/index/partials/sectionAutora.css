@@ -1,0 +1,113 @@
+/*
+
+INDEX > section.autora
+
+*/
+
+section.autora {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  background-color: var(--cor-principal);
+  background-image: url('../../../../../files/pages/index/background-autora-desktop.png');
+  background-size: cover;
+  background-position: bottom center;
+  padding: 80px;
+  position: relative;
+}
+
+section.autora img.foto {
+  position: absolute;
+  right: 80px;
+  top: -30%;
+  width: 35%;
+}
+
+section.autora .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 0 0 40px 0;
+}
+
+section.autora .texto h2 {
+  font-family: var(--fonte-extralight);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: var(--cor-branco);
+  max-width: 550px;
+}
+
+section.autora .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-secundaria);
+  padding: 20px 0 0 0;
+}
+
+section.autora .texto .botoes {
+  display: flex;
+  padding: 40px 0 0 0;
+}
+
+section.autora .texto button {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-principal);
+  background-color: var(--cor-branco);
+  padding: 10px 10px 10px 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s;
+  margin-right: 20px;
+}
+
+section.autora .texto button img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  pointer-events: none;
+  margin-left: 30px;
+}
+
+section.autora .texto button:hover {
+  opacity: 0.7;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+  section.autora {
+    background-image: url('../../../../../files/pages/index/background-autora-mobile.png');
+    background-position: bottom left;
+    padding: 300px 25px 80px 25px;
+  }
+  section.autora img.foto {
+    right: 25px;
+    top: -100px;
+    width: 100%;
+    max-width: 350px;
+  }
+  section.autora .texto {
+    width: 100%;
+    padding: 0 0 0 0;
+  }
+  section.autora .texto .botoes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  section.autora .texto button {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}

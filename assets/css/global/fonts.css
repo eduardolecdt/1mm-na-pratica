@@ -5,9 +5,25 @@ FONTES
 */
 
 @font-face {
-  font-family: '';
+  font-family: 'clarikaExtralight';
   font-weight: normal;
   font-style: normal;
   font-display: swap;
-  src: url('') format('woff');
+  src: url('../../../files/fonts/clarika-extralight.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'clarikaRegular';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/clarika-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'clarikaDemibold';
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  src: url('../../../files/fonts/clarika-demibold.woff') format('woff');
 }

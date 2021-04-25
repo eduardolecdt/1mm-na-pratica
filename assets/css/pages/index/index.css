@@ -8,4 +8,13 @@ INDEX
 
 /* Partials */
 
+@import './partials/nav.css';
 @import './partials/header.css';
+@import './partials/sectionAutora.css';
+@import './partials/sectionConteudo.css';
+@import './partials/sectionDepoimentos.css';
+@import './partials/sectionFrase.css';
+@import './partials/sectionGarantia.css';
+@import './partials/sectionInformacoes.css';
+@import './partials/sectionPreco.css';
+@import './partials/footer.css';
