@@ -32,6 +32,7 @@ section.preco .quadro h3 {
   font-family: var(--fonte-extralight);
   font-size: clamp(2.5rem, 5vw, 3rem);
   color: var(--cor-secundaria);
+  text-align: center;
 }
 
 section.preco .quadro h2 {
@@ -43,6 +44,14 @@ section.preco .quadro h2 {
 
 section.preco .quadro h2 span {
   font-size: clamp(7rem, 5vw, 9rem);
+}
+
+section.preco .quadro h4 {
+  font-family: var(--fonte-extralight);
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: var(--cor-secundaria);
+  text-align: center;
+  padding: 0 0 20px 0;
 }
 
 section.preco .quadro p {

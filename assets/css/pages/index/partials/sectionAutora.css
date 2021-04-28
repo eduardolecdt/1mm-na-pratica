@@ -57,8 +57,9 @@ section.autora .texto button {
   font-family: var(--fonte-regular);
   font-size: clamp(1rem, 5vw, 1.3rem);
   line-height: 1.6;
-  color: var(--cor-principal);
-  background-color: var(--cor-branco);
+  color: var(--cor-branco);
+  background-color: transparent;
+  border: 2px solid var(--cor-branco);
   padding: 10px 10px 10px 30px;
   border-radius: 50px;
   display: flex;

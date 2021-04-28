@@ -60,6 +60,7 @@ section.conteudo .slide .itens {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 80px;
+  transition: all 0.3s;
 }
 
 section.conteudo .slide::-webkit-scrollbar {
@@ -107,6 +108,7 @@ Responsivo
   section.conteudo .titulo .setas {
     margin-left: 0;
     padding: 20px 0 0 0;
+    pointer-events: none;
   }
   section.conteudo .titulo .setas button {
     background-color: var(--cor-secundaria);

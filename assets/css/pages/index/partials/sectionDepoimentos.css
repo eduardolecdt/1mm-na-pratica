@@ -15,7 +15,7 @@ section.depoimentos {
 
 section.depoimentos .titulo {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
   justify-content: center;
   padding: 80px;
   width: 100%;
@@ -36,7 +36,7 @@ section.depoimentos .titulo p {
   color: var(--cor-principal);
   padding: 20px 0 0 0;
   width: 100%;
-  max-width: 600px;
+  max-width: 650px;
 }
 
 section.depoimentos .titulo .setas {
@@ -61,7 +61,7 @@ section.depoimentos .slide {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 80px 0 0 0;
+  padding: 0 0 80px 0;
   width: 100%;
   overflow-y: hidden;
   scrollbar-width: none;
@@ -72,6 +72,7 @@ section.depoimentos .slide .itens {
   align-items: flex-start;
   justify-content: flex-start;
   padding: 0 80px;
+  transition: all 0.3s;
 }
 
 section.depoimentos .slide::-webkit-scrollbar {
@@ -97,13 +98,106 @@ section.depoimentos .slide .itens .item:hover {
 
 section.depoimentos .slide .itens .item p {
   position: absolute;
-  top: -30px;
-  left: 25px;
+  top: 0;
+  left: 0;
   font-family: var(--fonte-regular);
   font-size: clamp(1rem, 5vw, 1.3rem);
   line-height: 1.6;
   color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  border: 3px solid var(--cor-branco);
+  padding: 10px 20px;
+  border-radius: 10px;
   pointer-events: none;
+}
+
+/* Modal */
+
+section.depoimentos div.modal {
+  display: none;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 100%;
+  max-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+}
+
+section.depoimentos div.modal.mostrar {
+  display: flex;
+}
+
+section.depoimentos div.modal .conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 20px;
+  background-color: #D7A19Eb3;
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+@keyframes abrirModal {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+section.depoimentos div.modal.mostrar .conteudo {
+  animation: abrirModal 0.3s linear;
+  opacity: 1;
+  visibility: visible;
+}
+
+section.depoimentos div.modal .conteudo button {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1.1rem, 5vw, 1.3rem);
+  color: var(--cor-principal);
+  background-color: var(--cor-secundaria);
+  transition: all 0.3s;
+  padding: 13px 20px;
+  border-radius: 50px;
+  margin: 0 0 30px 0;
+}
+
+section.depoimentos div.modal .conteudo button:hover {
+  opacity: 0.7;
+}
+
+section.depoimentos div.modal .conteudo .video {
+  width: 100%;
+  max-width: 800px;
+}
+
+section.depoimentos div.modal .conteudo .video .tamanho {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+
+section.depoimentos div.modal .conteudo .video .tamanho iframe {
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  min-height: 100%;
+  margin: 0 0 0 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  background-color: var(--cor-preto);
 }
 
 /*
@@ -114,13 +208,14 @@ Responsivo
 
 @media screen and (max-width: 1000px) {
   section.depoimentos .titulo {
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: flex-start;
     padding: 60px 25px;
   }
   section.depoimentos .titulo .setas {
     margin-left: 0;
-    padding: 0 0 20px 0;
+    padding: 30px 0 0 0;
+    pointer-events: none;
   }
   section.depoimentos .titulo .setas button {
     margin-right: 30px;
@@ -135,7 +230,7 @@ Responsivo
     opacity: 0.7;
   }
   section.depoimentos .slide {
-    padding: 30px 0 0 0;
+    padding: 0 0 50px 0;
   }
   section.depoimentos .slide .itens {
     padding: 0 25px;

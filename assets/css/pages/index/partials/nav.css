@@ -10,9 +10,16 @@ nav {
   justify-content: center;
   width: 100%;
   padding: 10px 80px;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  transition: all 0.3s;
+}
+
+nav.scroll {
+  background-color: var(--cor-branco);
+  z-index: 10;
+  box-shadow: 0 0 20px 0 #9569671a;
 }
 
 nav img.logo {
@@ -34,6 +41,11 @@ nav .opcoes button {
   border-radius: 50px;
   margin: 0 0 0 30px;
   transition: all 0.3s;
+}
+
+nav.scroll .opcoes button {
+  background-color: transparent;
+  color: var(--cor-principal);
 }
 
 nav .opcoes button.destaque {
