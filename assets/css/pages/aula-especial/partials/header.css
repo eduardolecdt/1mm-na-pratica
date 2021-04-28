@@ -1,0 +1,109 @@
+/*
+
+AULA ESPECIAL > HEADER
+
+*/
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  background-image: url('../../../../../files/pages/index/background-header-desktop.png');
+  background-size: cover;
+  background-position: left;
+  min-height: 100vh;
+  padding: 80px;
+  width: 100%;
+}
+
+header .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  width: 50%;
+  padding: 150px 80px 150px 0;
+}
+
+header .texto h1 {
+  font-family: var(--fonte-extralight);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: var(--cor-principal);
+  max-width: 550px;
+}
+
+header .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-principal);
+  padding: 20px 0;
+}
+
+header .texto button {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-principal);
+  background-color: var(--cor-branco);
+  padding: 10px 10px 10px 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s;
+}
+
+header .texto button img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  pointer-events: none;
+  margin-left: 30px;
+}
+
+header .texto button:hover {
+  opacity: 0.7;
+}
+
+header .imagem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+header .imagem img {
+  width: 100%;
+  max-width: 600px;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+  header {
+    flex-direction: column;
+    background-image: url('../../../../../files/pages/index/background-header-mobile.png');
+    background-position: top right;
+    min-height: auto;
+    padding: 60px 25px;
+  }
+  header .texto {
+    width: 100%;
+    padding: 0 0 50px 0;
+  }
+  header .texto p {
+    padding: 20px 0 40px 0;
+  }
+  header .imagem {
+    width: 100%;
+  }
+  header .imagem img {
+    transform: rotateY(180deg);
+  }
+}

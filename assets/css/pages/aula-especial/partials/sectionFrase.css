@@ -1,0 +1,97 @@
+/*
+
+AULA ESPECIAL > section.frase
+
+*/
+
+section.frase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-secundaria);
+  padding: 80px;
+}
+
+section.frase .tamanho {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+section.frase .tamanho img {
+  width: 100%;
+  max-width: 350px;
+}
+
+section.frase .tamanho .texto {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 0 0 80px;
+}
+
+section.frase .tamanho .texto h2 {
+  font-family: var(--fonte-extralight);
+  font-size: clamp(2.5rem, 5vw, 3rem);
+  color: var(--cor-principal);
+}
+
+section.frase .tamanho .texto p {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-principal);
+  padding: 20px 0;
+}
+
+section.frase .tamanho .texto button {
+  font-family: var(--fonte-regular);
+  font-size: clamp(1rem, 5vw, 1.3rem);
+  line-height: 1.6;
+  color: var(--cor-branco);
+  background-color: var(--cor-principal);
+  padding: 10px 10px 10px 30px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.3s;
+}
+
+section.frase .tamanho .texto button img {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  pointer-events: none;
+  margin-left: 30px;
+}
+
+section.frase .tamanho .texto button:hover {
+  opacity: 0.7;
+}
+
+/*
+
+Responsivo
+
+*/
+
+@media screen and (max-width: 1000px) {
+  section.frase {
+    flex-direction: column;
+    padding: 50px 25px;
+  }
+  section.frase .tamanho {
+    display: flex;
+    flex-direction: column;
+  }
+  section.frase .tamanho img {
+    max-width: 250px;
+  }
+  section.frase .tamanho .texto {
+    padding: 30px 0 0 0;
+  }
+}

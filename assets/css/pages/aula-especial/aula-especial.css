@@ -1,0 +1,15 @@
+/*
+
+AULA ESPECIAL
+
+*/
+
+@import '../../global/global.css';
+
+/* Partials */
+
+@import './partials/header.css';
+@import './partials/sectionDepoimentos.css';
+@import './partials/sectionFrase.css';
+@import './partials/sectionModal.css';
+@import './partials/footer.css';
