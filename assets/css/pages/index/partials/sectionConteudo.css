@@ -10,7 +10,7 @@ section.conteudo {
   align-items: center;
   justify-content: center;
   background-color: var(--cor-secundaria);
-  background-image: url('../../../../../files/pages/index/background-conteudo-desktop.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-conteudo-desktop.png');
   background-position: top right;
   background-size: cover;
 }
@@ -70,7 +70,7 @@ section.conteudo .slide::-webkit-scrollbar {
 section.conteudo .slide .itens .item {
   width: 400px;
   min-height: 400px;
-  background-image: url('../../../../../files/pages/index/moldura-conteudo.svg');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/moldura-conteudo.svg');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;
@@ -96,7 +96,7 @@ Responsivo
 
 @media screen and (max-width: 1000px) {
   section.conteudo {
-    background-image: url('../../../../../files/pages/index/background-conteudo-mobile.png');
+    background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-conteudo-mobile.png');
     background-position: bottom left;
   }
   

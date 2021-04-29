@@ -10,7 +10,7 @@ section.depoimentos {
   align-items: center;
   justify-content: center;
   background-color: var(--cor-principal);
-  background-image: url('../../../../../files/pages/index/background-autora-desktop.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-autora-desktop.png');
   background-size: cover;
   background-position: bottom center;
   background-size: cover;
@@ -88,7 +88,7 @@ section.depoimentos .slide::-webkit-scrollbar {
 section.depoimentos .slide .itens .item {
   width: 400px;
   min-height: 400px;
-  background-image: url('../../../../../files/pages/index/depoimento-moldura.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/depoimento-moldura.png');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;

@@ -82,7 +82,7 @@ section.depoimentos .slide::-webkit-scrollbar {
 section.depoimentos .slide .itens .item {
   width: 400px;
   min-height: 400px;
-  background-image: url('../../../../../files/pages/index/depoimento-moldura.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/depoimento-moldura.png');
   background-size: contain;
   background-position: top center;
   background-repeat: no-repeat;

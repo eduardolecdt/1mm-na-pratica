@@ -10,7 +10,7 @@ section.autora {
   justify-content: flex-start;
   width: 100%;
   background-color: var(--cor-principal);
-  background-image: url('../../../../../files/pages/index/background-autora-desktop.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-autora-desktop.png');
   background-size: cover;
   background-position: bottom center;
   padding: 80px;
@@ -89,7 +89,7 @@ Responsivo
 
 @media screen and (max-width: 1000px) {
   section.autora {
-    background-image: url('../../../../../files/pages/index/background-autora-mobile.png');
+    background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-autora-mobile.png');
     background-position: bottom left;
     padding: 300px 25px 80px 25px;
   }

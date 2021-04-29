@@ -9,7 +9,7 @@ section.preco {
   align-items: center;
   justify-content: center;
   background-color: var(--cor-secundaria);
-  background-image: url('../../../../../files/pages/index/background-preco-desktop.png');
+  background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-preco-desktop.png');
   background-size: cover;
   background-position: bottom center;
   padding: 150px 25px 150px 25px;
@@ -97,7 +97,7 @@ Responsivo
 
 @media screen and (max-width: 1000px) {
   section.preco {
-    background-image: url('../../../../../files/pages/index/background-preco-mobile.png');
+    background-image: url('https://arquivos.1milimetronapratica.com.br/pages/index/background-preco-mobile.png');
     background-position: bottom right;
     padding: 80px 25px 130px 25px;
   }
